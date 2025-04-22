@@ -303,7 +303,7 @@ fn do_keyboard_movement(
         }
 
         // The proposed new camera position
-        let proposed_cam_pos = transform.translation.truncate() - delta;
+        let proposed_cam_pos = transform.translation.truncate() + delta;
 
         transform.translation =
             clamp_to_safe_zone(proposed_cam_pos, pan_cam.aabb(), projection.area.size())
