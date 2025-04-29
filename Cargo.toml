@@ -7,5 +7,8 @@ edition = "2024"
 bevy_egui = ["dep:bevy_egui"]
 
 [dependencies]
-bevy = { version = "0.15", features = ["bevy_window", "bevy_core_pipeline"], default-features = false }
-bevy_egui = { version = "0.33", optional = true, default-features = false }
+bevy = { version = "0.16", features = [
+  "bevy_window",
+  "bevy_core_pipeline",
+], default-features = false }
+bevy_egui = { version = "0.34", optional = true, default-features = false }
